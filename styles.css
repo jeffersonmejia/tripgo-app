@@ -1,0 +1,434 @@
+
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-bottom: 1px solid #ccc; /* Línea separadora */
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Menú central */
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menu-item:hover,
+.menu-item.active {
+    color: #007BFF; /* Color azul cuando está activo o al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Opciones a la derecha */
+.right-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Cuadro de búsqueda */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 5px 15px;
+    margin: 20px auto; /* Centra el cuadro de búsqueda horizontalmente */
+}
+
+
+
+/* Campo de texto */
+.search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+/* Botón de búsqueda */
+.search-box button {
+    background-color: #00cc88;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Menú central */
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menu-item:hover,
+.menu-item.active {
+    color: #007BFF; /* Color azul cuando está activo o al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Opciones a la derecha */
+.right-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #333;
+}
+
+
+
+/* Icono de búsqueda */
+.search-box i {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+}
+
+/* Campo de texto */
+.search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-box input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+
+.search-box button:hover {
+    background-color: #00aa77;
+}
+/* Sección hero */
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Image/fondo.jpg'); /* Imagen de fondo para toda la página */
+    background-size: cover; /* La imagen cubrirá todo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+    background-color: #f5f5f5; /* Color de fondo como respaldo */
+
+}
+
+/* Sección hero */
+.hero {
+    width: 100%; /* Cubre todo el ancho */
+    height: 100vh; /* Cubre toda la altura del viewport */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-top: 20px; /* Espacio entre el buscador y la sección hero */
+}
+
+/* Contenido dentro del hero */
+.hero-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente detrás del texto */
+    width: 100%; /* Cubre todo el ancho */
+    height: 95vh; /* Cubre toda la altura del viewport */
+    padding: 20px;
+    border-radius: 5px;
+    background: fixed; /* Fija el contenedor en la ventana */
+    top: 0; /* Ajusta al inicio del viewport */
+    left: 0; /* Ajusta al inicio del viewport */
+
+}
+
+/* El resto de tu CSS queda igual... */
+
+/* Estilo del texto principal */
+.texto-principal {
+    font-family: 'Montserrat', sans-serif; /* Cambia a una fuente específica si conoces la que se usa */
+    font-size: 3rem; /* Ajusta el tamaño según tu diseño */
+    font-weight: bold;
+    color: white; /* Color blanco para el texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para darle profundidad */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-align: center; /* Centrado */
+}
+
+/* Estilo del texto secundario (si lo necesitas) */
+.texto-secundario {
+    font-family: 'Dancing Script', cursive; /* Fuente con estilo manuscrito */
+    font-size: 2rem; /* Ajusta el tamaño */
+    font-weight: 400; /* Peso de la fuente */
+    color: #32a852; /* Color verde */
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Estilos básicos para el chat */
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+/* Header del chat */
+#chat-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-header h4 {
+    margin: 0;
+}
+
+#close-chat {
+    background-color: transparent;
+    border: none;
+    color: teal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Cuerpo del chat */
+#chat-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+     background-color: write;
+    font-size: 10px;
+    line-height: 1.5; 
+    border-top: 1px solid #ccc;
+}
+/* Mensajes */
+.chat-message {
+    text-align: left;
+    margin: 8px 10px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 12px;
+    max-width: 80%;
+    line-height: 0.3;
+    position: relative;
+    word-wrap: break-word;
+}
+
+/* Mensaje del usuario */
+.user-message {
+    background-color: #dcf8c6;
+    color: #000000;
+    align-self: flex-start;
+}
+
+/* Hora del mensaje */
+.chat-time {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Ocultar inicialmente */
+.chat-hidden {
+    display: none;
+    opacity: 0;
+}
+
+/* Mostrar el chat */
+.chat-visible {
+    display: flex;
+    opacity: 1;
+}
+/* Barra de entrada */
+#chat-input-bar {
+    display: flex;
+    align-items: center;
+    background-color: #write;
+    padding: 8px;
+    border-top: 1px solid #1f2c34;
+}
+
+#emoji-btn, #send-btn {
+    background: none;
+    border: none;
+    color: #8696a0; /* Color del ícono */
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+#chat-input {
+    flex-grow: 1;
+    background-color: #98FB98;
+    border: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Cambio de color al hacer hover en los botones */
+#emoji-btn:hover, #send-btn:hover {
+    color: #ffffff;
+}
+/* Estilos generales para la cuadrícula */
+.turistic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
+
+/* Estilo de cada elemento (item) */
+.grid-item {
+    display: flex;
+    flex-direction: row; /* Coloca la imagen y texto en fila */
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para evitar que los contenidos sobresalgan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilo de las imágenes */
+.item-image {
+    width: 40%; /* Imagen ocupa el 40% del ancho del item */
+    object-fit: cover; /* Escala la imagen correctamente */
+}
+
+/* Información del sitio turístico */
+.item-info {
+    padding: 15px;
+    flex: 1; /* El texto ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.item-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botón de más información */
+.info-button {
+    background-color: #28a745; /* Verde atractivo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    font-size: 14px;
+}
+
+.info-button:hover {
+    background-color: #218838; /* Oscurece el verde al pasar el cursor */
+}
+@media (max-width: 768px) {
+    .turistic-grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+    }
+}
+
+@media (max-width: 480px) {
+    .turistic-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}
